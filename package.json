@@ -11,7 +11,8 @@
     "start": "msp start",
     "start:ts": "msp start -t",
     "build": "msp build",
-    "build:ts": "msp build -t"
+    "build:ts": "msp build -t",
+    "tss": "msp tss http://localhost:8001/index.d.ts -n @msp-react-base.d.ts"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.1",
