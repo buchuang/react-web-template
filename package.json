@@ -10,7 +10,7 @@
   "scripts": {
     "start": "msp dev",
     "dev": "msp dev",
-    "test": "msp test",
+    "test": "msp dev --env=test",
     "build": "msp build",
     "build:ts": "msp build -t"
   },
