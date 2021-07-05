@@ -5,12 +5,12 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "stjk-mf-cli": "^1.0.17"
+    "stjk-mf-cli": "^1.0.19"
   },
   "scripts": {
-    "start": "msp dev",
-    "dev": "msp dev",
-    "test": "msp dev --env=test",
+    "start": "msp start",
+    "test": "msp start --env=test",
+    "pre": "msp start --env=pre",
     "build": "msp build",
     "build:ts": "msp build -t"
   },
