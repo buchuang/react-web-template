@@ -13,11 +13,10 @@ module.exports = ({ config, env, mspEnv }) => {
       ...args[0],
       name: "mspReactProject",
       remotes: {
-        "@msp/react-base": "mspReactBase@http://localhost:9300/msp.js"
+        "@msp/react-base": "mspReactBase@http://localhost:9200/msp.js"
       },
       exposes: {
-        // "./components/Hello": "src/components/Hello",
-        // "./components/Hello2": "src/components/Hello2"
+        "./container/App": "src/container/App"
       },
       shared: {},
       // 被远程引入的文件名
