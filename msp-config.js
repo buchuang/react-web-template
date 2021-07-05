@@ -1,10 +1,7 @@
 const path = require("path")
-const packagePath = path.join(path.resolve("./"), "package.json")
-const { dependencies } = require(packagePath)
 const srcPathAbsolute = path.join(__dirname, "src")
 module.exports = ({ config, env, mspEnv }) => {
-  const port = 8001
-  const projectName = "mspReactProject"
+  const port = 8005
   const publicPath = `http://127.0.0.1:${port}/`
   // 设置项目URL
   config.output.publicPath(publicPath)
