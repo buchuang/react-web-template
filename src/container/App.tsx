@@ -1,7 +1,8 @@
 import React from "react"
-import logo from "./logo.svg"
+import logo from "images/logo.svg"
 import "./App.scss"
-
+import config from "../config"
+const RemoteApp = React.lazy(() => import("@msp/react-base/components/Demo"))
 function App() {
   return (
     <div className="App">
@@ -14,7 +15,12 @@ function App() {
           Learn Reacts
         </a>
         <p>process.env.MSP_ENV {process.env.MSP_ENV}</p>
-        <p>process.env.FOO {process.env.FOO}</p>
+        <p>process.env.MODE_ENV {process.env.MODE_ENV}</p>
+        <p>API {config.API}</p>
+        <p>APPID {config.APPID}</p>
+        {/* <Suspense fallback={"loading"}>
+              <RemoteApp />
+            </Suspense> */}
       </header>
     </div>
   )

@@ -9,8 +9,7 @@
   },
   "scripts": {
     "start": "msp start",
-    "test": "msp start --env=test",
-    "pre": "msp start --env=pre",
+    "start:ts": "msp start -t",
     "build": "msp build",
     "build:ts": "msp build -t"
   },
