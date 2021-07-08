@@ -10,6 +10,8 @@
   "scripts": {
     "start": "msp start",
     "start:ts": "msp start -t",
+    "dev": "msp start --env=dev",
+    "test": "msp start --env=test",
     "build": "msp build",
     "build:ts": "msp build -t",
     "tss": "msp tss http://localhost:8001/index.d.ts -n @msp-react-base.d.ts"
